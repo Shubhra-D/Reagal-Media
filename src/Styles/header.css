@@ -1,0 +1,241 @@
+/* Header wrapper */
+.header {
+  background-color: #010136;
+  color: white;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 12px 0;
+  border-top: 1px solid #1e3a8a;
+  border-bottom: 1px solid #1e3a8a;
+}
+
+/* Top bar with logo, nav, and controls */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+/* ============ Logo ============ */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  color: #60a5fa;
+  width: 32px;
+  height: 32px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-dot {
+  color: #f97316;
+  font-size: 24px;
+}
+
+/* ============ Navigation ============ */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s;
+}
+
+.nav-button:hover {
+  color: #60a5fa;
+}
+
+.dropdown-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* ============ Controls ============ */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: background 0.2s;
+}
+
+.icon-button:hover {
+  background-color: #1e3a8a;
+}
+
+/* Bell Notification Badge */
+.notification {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/* Currency Section */
+.currency {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #1e3a8a;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.currency-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Advertise Button */
+.advertise-button {
+  padding: 8px 16px;
+  background: linear-gradient(to right, #8b5cf6, #ec4899);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.advertise-button:hover {
+  background: linear-gradient(to right, #7c3aed, #db2777);
+}
+
+/* Search Box */
+.search-box {
+  position: relative;
+  display: none; /* hidden on small screens */
+}
+
+.search-box input {
+  padding: 8px 12px 8px 36px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e3a8a;
+  color: white;
+  width: 240px;
+}
+
+.search-box input::placeholder {
+  color: #cbd5e1;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  width: 16px;
+  height: 16px;
+}
+
+/* Login Button */
+.login-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background-color: white;
+  color: #1e3a8a;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #f1f5f9;
+}
+
+.login-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* ============ Track Portfolio Button ============ */
+.portfolio-button-wrapper {
+  padding-bottom: 16px;
+}
+
+.portfolio-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: white;
+  color: #1e3a8a;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.2s;
+}
+
+.portfolio-button:hover {
+  background-color: #f1f5f9;
+}
+
+/* Responsive Search Visibility */
+@media (min-width: 768px) {
+  .search-box {
+    display: block;
+  }
+}
+

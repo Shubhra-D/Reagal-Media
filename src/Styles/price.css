@@ -1,0 +1,66 @@
+.price-section {
+  background-color: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  font-family: sans-serif;
+}
+
+.price-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.price-scroll {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  overflow-x: auto;
+  padding: 12px 0;
+  scroll-behavior: smooth;
+}
+
+.price-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.price-label {
+  font-weight: 500;
+  color: #374151;
+}
+
+.price-bold {
+  font-weight: 600;
+  color: #111827;
+}
+
+.price-change {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.green {
+  color: #16a34a;
+}
+
+.red {
+  color: #dc2626;
+}
+
+.price-button {
+  border: none;
+  background: none;
+  color: #2563eb;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.price-button:hover {
+  color: #1d4ed8;
+}

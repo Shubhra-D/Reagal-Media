@@ -1,0 +1,146 @@
+.trend-section {
+  display: flex;
+  gap: 20px;
+  padding: 40px 20px;
+  background: #fff;
+  flex-wrap: wrap;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.trend-box {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border: 1.5px solid #ccc;
+}
+
+.trend-box.green {
+  border-color: #10b981;
+}
+
+.trend-box.red {
+  border-color: #ef4444;
+}
+
+.trend-box h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.table-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.coin-row {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.coin-row img {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+
+.coin-row .name {
+  flex: 1;
+  color: #111827;
+}
+
+.coin-row .price {
+  width: 80px;
+  text-align: right;
+}
+
+.coin-row .change {
+  width: 80px;
+  text-align: right;
+}
+
+.up {
+  color: #10b981;
+}
+
+.down {
+  color: #ef4444;
+}
+
+.view-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 13px;
+  background: #eef2ff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #2563eb;
+}
+
+.promo-box {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff7ed;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.promo-box img {
+  width: 40px;
+}
+
+.promo-box h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.promo-box h4 span {
+  color: #ef6c00;
+}
+
+.promo-box p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.promo-box input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.connect-btn {
+  background: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .trend-section {
+    flex-direction: column;
+  }
+}
